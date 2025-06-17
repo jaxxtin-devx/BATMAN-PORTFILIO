@@ -2,80 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jatin Arya | Dark Portfolio</title>
   <link rel="stylesheet" href="index.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet"/>
 </head>
+
 <body>
   <div class="container">
-    <header>
-      <img src="assets/batman-logo.png" alt="Batman Logo" class="logo" />
-      <h1>Jatin Arya</h1>
-      <p class="tagline">Frontend Developer | Dark Knight of Code</p>
-    </header>
+    <!-- Card Section -->
+    <div class="card-container" id="card-container">
+      <img src="assets/Batman-Logo-Computer.jpg" alt="batman logo" class="batman-logo">
+      <h1 class="hero-name">Jatin Arya</h1>
+      <p class="tagline">Not the Hero You Asked For, But the Coder You Deserve</p>
 
-    <section class="about" id="about">
+      <div class="card-stack">
+        <div class="card" data-section="about">About</div>
+        <div class="card" data-section="projects">Projects</div>
+        <div class="card" data-section="skills">Skills</div>
+        <div class="card" data-section="resume">Resume</div>
+        <div class="card" data-section="contact">Contact</div> 
+      </div>
+    </div>
+
+    <!--About section-->
+    <div class="section-content" id="about">
       <h2>About Me</h2>
-      <p>I'm a passionate frontend developer who turns coffee into code and shadows into beautiful UIs.</p>
-    </section>
+      <p>Hi, I'm Jatin Arya, a passionate and driven Frontend Web Developer, currently pursuing a dual degree in Biological Engineering at IIT Madras. With a keen eye for design and a strong foundation in HTML, CSS, and JavaScript, I craft responsive and user-centric web experiences. I'm currently interning as an HTML/CSS Developer at Geminimet Technologies, where I'm gaining hands-on experience building real-world user interfaces.  
+      <br /><br />
+      Beyond the code, I'm a proactive leader — having served as the Hostel Captain of both Godavari and Brahmaputra Hostels, and I thrive in team environments. I'm also a competitive swimmer and a bronze medalist at the Inter-IIT and Schroeter Championships, bringing discipline and dedication from the pool into every project I build.
+      <br /><br />
+      I'm continuously upskilling — learning frameworks like React, improving my problem-solving with C++ and DSA, and building mini-projects to enhance my development skills. My goal is to bring value to impactful tech teams and grow into a well-rounded frontend engineer.
+      <br /><br />
+      Let's build something amazing together.
+      </p>
+      <button class="back-btn">← Back to Menu</button>
+    </div>
 
-    <section class="projects">
+    <!-- projects SECTION -->
+    <div class="section-content" id="projects">
       <h2>Projects</h2>
       <div class="project-card">
-        <h3>Dev Hub</h3>
-        <p>A modern platform for developers to share and discover resources. Built with HTML, CSS, and JS.</p>
+        <h3>AryaX Crypto</h3>
+        <p>Secure and fast crypto investment landing page.</p>
+        <a href="https://aryax-crypto.netlify.app" target="_blank">Live</a> |
+        <a href="https://github.com/jaxxtin-devx/aryax-crypto" target="_blank">GitHub</a>
       </div>
+      <button class="back-btn">← Back to Menu</button>
+    </div>
 
+    <!-- SKILLS SECTION -->
+    <div class="section-content" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>🖋️ Languages & Markup</h3>
+          <ul>
+            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+            <li>C, C++, Python</li>
+          </ul>
+        </div>
 
-      <div class="project-card">
-        <h3>Recipe Generator</h3>
-        <p>Generates random recipes using an API. Built with JavaScript and styled for a clean look.</p>
+        <div class="skill-category">
+          <h3>🌐 Frontend Development</h3>
+          <ul>
+            <li>React.js, Responsive Design</li>
+            <li>DOM Manipulation, CSS Grid, Flexbox</li>
+            <li>Bootstrap, Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>⚙️ Tools & Platforms</h3>
+          <ul>
+            <li>Git, GitHub, GitHub Pages</li>
+            <li>VS Code, Netlify, Formspree</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>📊 Data & Productivity</h3>
+          <ul>
+            <li>Power BI, Microsoft Excel</li>
+            <li>Microsoft PowerPoint</li>
+          </ul>
+        </div>
       </div>
+      <button class="back-btn">← Back to Menu</button>
+    </div>
 
-      <div class="project-card">
-         <h3>Travel Landing Page</h3>
-         <p>Beautiful landing page for a travel agency with full responsiveness and animations.</p>
-         </div>
+    <!-- Resume SECTION -->
+    <div class="section-content" id="resume">
+      <h2>Resume</h2>
+     <p>You can download my resume 
+      <a href="assets/resume 3.pdf" download target="_blank" class="resume-btn">📄 Click here</a>.
+      </p>
+      <button class="back-btn">← Back to Menu</button>
+    </div>
 
-
-      <div class="project-card">
-        <h3>Wayne Dashboard</h3>
-        <p>Dashboard UI inspired by the Batcave's control room.</p>
-      </div>
-
-
-      <div class="project-card">
-      <h3>Fitness Tracker</h3>
-      <p>Track workouts and set fitness goals. Built with vanilla JS and stylish CSS transitions.</p>
-      </div>
-
-      
-      <div class="project-card">
-      <h3>solartec</h3>
-      <p>A modern landing page for a fictional solar energy company. Features clean UI, CTA sections, and responsive design.</p>
-      </div>
-    </section>
-
-    <!--------------------contact me section----------------->
-
-    <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/mpwrpzvn" method="POST">
+    <!-- contact SECTION -->
+    <div class="section-content" id="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach me directly at:  
+        <a href="mailto:jatinaryazzz151@gmail.com" class="email-link">jatinaryazzz151@gmail.com</a>
+        </p>
+      <form action="https://formspree.io/f/mpwrpzvn" method="POST">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit">Send Message</button>
-    </form>
-    </section>
-
-
-
-    <footer>
-      <p>© 2025 Jatin Arya. All Rights Reserved.</p>
-    </footer>
+      </form>
+      <button class="back-btn">← Back to Menu</button>
+    </div>
   </div>
 
   <script src="index.js"></script>
+
+  <script>
+  const toggleBtn = document.getElementById("themeToggle");
+  const body = document.body;
+
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("light-mode");
+
+    if (body.classList.contains("light-mode")) {
+      toggleBtn.textContent = "🌞 Light Mode";
+    } else {
+      toggleBtn.textContent = "🌙 Dark Mode";
+    }
+  });
+</script>
 </body>
 </html>
